@@ -171,7 +171,7 @@ body {
   margin: 0 auto;
 
   /* photo style */
-  background: #ffffff;
+  background: #141414;
   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
   backdrop-filter: none;
 
@@ -211,7 +211,7 @@ body {
   display: inline-block;
   padding: 6px 0;
 
-  color: #0b0b0c; /* black text */
+  color: #ffffff; /* black text */
   text-decoration: none;
 
   font-weight: 500; /* elegant, not bold */
@@ -1161,3 +1161,4 @@ body {
     height: 77px;
   }
 }
+
