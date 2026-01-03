@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="sq">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <title>Roni Mobileri</title>
+
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+  <!-- =========================
+         COMPONENT: NAVBAR
+    ========================== -->
+  <nav class="navbar" aria-label="Primary">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="#home" aria-label="Home">
+        <img src="../images/2f7c7e06-b6b4-4124-8c7d-e4824586fbb2.png" class="logo logo--nav" alt="Roni Mobileri logo" />
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a class="navbar__link" href="../index.html">BALLINA</a></li>
+        <li><a class="navbar__link" href="#about">RRETH NESH</a></li>
+        <li><a class="navbar__link" href="#products">PRODUKTET</a></li>
+        <li><a class="navbar__link" href="#contact">KONTAKT</a></li>
+      </ul>
+
+      <button class="navbar__toggle" type="button" aria-label="Hap menunë" aria-controls="mobilepanel"
+        aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div id="mobilepanel" class="mobilepanel" hidden>
+      <ul class="mobilepanel__links" role="list">
+        <li><a href="#home">BALLINA</a></li>
+        <li><a href="#about">RRETH NESH</a></li>
+        <li><a href="#products">PRODUKTET</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- =========================
+         COMPONENT: HERO
+    ========================== -->
+  <header id="home" class="hero" aria-label="Hero">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide is-active"
+        style="background-image:url('https://assets.pietboon.com/wp-content/uploads/20240418102858/piet-boon-milan-furniture-fair-2024-ab-001-hero-image-landingspage.jpg');">
+      </div>
+      <div class="hero__slide"
+        style="background-image:url('https://hfoc.com.au/cdn/shop/files/HFOC-Hero-Mobile_1445x.jpg?v=1763515493');">
+      </div>
+      <div class="hero__slide"
+        style="background-image:url('https://cdn-proxy-worker.rcwilley.workers.dev/images/Aspen_Furniture/brandHero_Mobile.webp');">
+      </div>
+    </div>
+
+    <div class="hero__overlay">
+      <div class="hero__text is-active" data-slide="0">
+        <h1>Mobilim<br />për stilin tuaj të jetesës</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+
+      <div class="hero__text" data-slide="1">
+        <h1>Komoditet modern<br />pa kohë</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+
+      <div class="hero__text" data-slide="2">
+        <h1>Detaje të punuara<br />për çdo hapësirë</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+    </div>
+  </header>
+
+
+
+<section class="about-highlight" id="rreth-nesh">
+  <div class="about-highlight__inner">
+    <div class="about-highlight__text">
+      <h2>Rreth Nesh</h2>
+
+      <p>
+        Te Mobileria Roni, ne besojmë se mobilimi nuk është vetëm funksion—është identitet, atmosferë dhe mënyra si
+        e përjetoni çdo ditë shtëpinë apo ambientin tuaj të punës. Çdo hapësirë ka ritmin e vet: drita, lëvizja,
+        qetësia dhe komoditeti. Pikërisht aty hyn mobilimi i duhur—ai që e bën ambientin të duket i rregullt,
+        i ngrohtë dhe me karakter.
+      </p>
+
+      <p>
+        Ne sjellim kombinimin ideal mes stilit modern dhe elegancës klasike, duke u fokusuar në cilësi të lartë,
+        përzgjedhje të kujdesshme dhe detaje që zgjasin në kohë. Për ne, cilësia nuk është vetëm pamje, por edhe
+        qëndrueshmëri: materiale të mira, punim i pastër, përfundime të sakta dhe ndjesi që mbetet e njëjtë edhe pas vitesh.
+        Prandaj, në çdo koleksion që prezantojmë, kërkojmë balancë mes estetikës dhe përdorimit praktik.
+      </p>
+
+      <p>
+        Qasja jonë është e thjeshtë: të ndihmojmë klientët të krijojnë ambiente që reflektojnë stilin e tyre të jetesës.
+        Disa kërkojnë minimalizëm dhe linja të pastra; të tjerë kërkojnë ngrohtësi dhe tekstura klasike. Disa duan një
+        sallon që impresionon, të tjerë një kuzhinë që e bën rutinën më të lehtë. Ne e respektojmë këtë diversitet dhe
+        e kthejmë në zgjidhje konkrete për çdo hapësirë.
+      </p>
+
+
+ 
+      <div class="about-highlight__stats" aria-label="Pikat kryesore">
+        <div class="stat">
+          <span class="stat__num">Cilësi</span>
+          <span class="stat__label">Materiale të zgjedhura dhe përfundime të sakta</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">Dizajn</span>
+          <span class="stat__label">Stil modern & klasik, i balancuar për çdo ambient</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">Besim</span>
+          <span class="stat__label">Përkushtim dhe këshillim për zgjedhjen e duhur</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-highlight__media" aria-label="Galeria e imazheve">
+      <div class="about-highlight__grid">
+        <figure class="tile tile--a">
+          <img src="https://media.architecturaldigest.com/photos/6759e6573454704b7b63f079/16:9/w_6720,h_3780,c_limit/012624_ParisForino_WestEnd_Garruppo_015.jpg" alt="Mobilim modern në ambient ndenjeje" loading="lazy" />
+        </figure>
+        <figure class="tile tile--b">
+          <img src="https://www.housedigest.com/img/gallery/the-best-trick-for-repairing-missing-details-on-wood-furniture/how-to-use-this-trick-to-restore-detailing-on-wood-furniture-1736965970.jpg" alt="Detaje mobilimi me dizajn elegant" loading="lazy" />
+        </figure>
+        <figure class="tile tile--c">
+          <img src="https://t3.ftcdn.net/jpg/07/46/84/72/360_F_746847281_pyQB2tFPk5rVqcUPhb94RDDOobWn0Cjn.jpg" alt="Kuzhinë me mobilim bashkëkohor" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- =========================
+     GIANT PREMIUM FOOTER
+========================== -->
+  <footer class="footer">
+    
+    <div class="footer__inner">
+      <div class="footer__top">
+        
+     
+
+        <div class="footer__col">
+          <h4>Salloni</h4>
+          <address>
+            Rruga Gustav Meyer<br />
+            Nr. 24<br />
+            10000 Prishtinë<br />
+            Kosovë
+          </address>
+          <p class="footer__note">
+            Vizitoni sallonin tonë për të përjetuar koleksionet nga afër.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <p>Shitje<br /><a href="tel:+38344123456">+383 44 123 456</a></p>
+          <p>Mbështetje<br /><a href="tel:+38349111222">+383 49 111 222</a></p>
+          <p>Email<br /><a href="mailto:info@ronimobileri.com">info@ronimobileri.com</a></p>
+        </div>
+
+     
+        <div class="footer__col">
+          <h4>Orari i punës</h4>
+          <p>E hënë – E premte<br />09:00 – 18:00</p>
+          <p>E shtunë<br />10:00 – 16:00</p>
+          <p class="footer__note">E diel – mbyllur</p>
+        </div>
+        <img src="../images/2f7c7e06-b6b4-4124-8c7d-e4824586fbb2.png" alt="Roni Mobileri logo" class="logo logo--footer" />
+
+      </div>
+
+
+      
+      <div class="footer__bottom">
+        <p>© 2026 Roni Mobileri. Të gjitha të drejtat e rezervuara.</p>
+        <p class="footer__legal">Dizajnuar me kujdes për jetesë moderne.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".navbar__toggle");
+    const panel = document.querySelector(".mobilepanel");
+
+    const setMenu = (open) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      panel.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+    };
+
+    setMenu(false);
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setMenu(!isOpen);
+    });
+
+    panel.addEventListener("click", (e) => {
+      if (e.target.closest("a")) setMenu(false);
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+
+    const slides = Array.from(document.querySelectorAll(".hero__slide"));
+    const texts = Array.from(document.querySelectorAll(".hero__text"));
+
+    let i = 0;
+    setInterval(() => {
+      slides[i].classList.remove("is-active");
+      texts[i].classList.remove("is-active");
+      i = (i + 1) % slides.length;
+      slides[i].classList.add("is-active");
+      texts[i].classList.add("is-active");
+    }, 2400);
+
+    const editorialBlocks = document.querySelectorAll(".editorial__block");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    editorialBlocks.forEach((block) => observer.observe(block));
+  </script>
+</body>
+</html>
