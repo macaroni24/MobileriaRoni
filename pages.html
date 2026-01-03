@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="sq">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <title>Roni Mobileri</title>
+
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+  <!-- =========================
+         COMPONENT: NAVBAR
+    ========================== -->
+  <nav class="navbar" aria-label="Primary">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="#home" aria-label="Home">
+        <img src="./images/logo.png" class="logo logo--nav" alt="Roni Mobileri logo" />
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a class="navbar__link" href="#home">BALLINA</a></li>
+        <li><a class="navbar__link" href="#about">RRETH NESH</a></li>
+        <li><a class="navbar__link" href="#products">PRODUKTET</a></li>
+        <li><a class="navbar__link" href="#contact">KONTAKT</a></li>
+      </ul>
+
+      <button class="navbar__toggle" type="button" aria-label="Hap menunë" aria-controls="mobilepanel"
+        aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div id="mobilepanel" class="mobilepanel" hidden>
+      <ul class="mobilepanel__links" role="list">
+        <li><a href="#home">BALLINA</a></li>
+        <li><a href="#about">RRETH NESH</a></li>
+        <li><a href="#products">PRODUKTET</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =========================
+         COMPONENT: HERO
+    ========================== -->
+  <header id="home" class="hero" aria-label="Hero">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide is-active"
+        style="background-image:url('https://assets.pietboon.com/wp-content/uploads/20240418102858/piet-boon-milan-furniture-fair-2024-ab-001-hero-image-landingspage.jpg');">
+      </div>
+      <div class="hero__slide"
+        style="background-image:url('https://hfoc.com.au/cdn/shop/files/HFOC-Hero-Mobile_1445x.jpg?v=1763515493');">
+      </div>
+      <div class="hero__slide"
+        style="background-image:url('https://cdn-proxy-worker.rcwilley.workers.dev/images/Aspen_Furniture/brandHero_Mobile.webp');">
+      </div>
+    </div>
+
+    <div class="hero__overlay">
+      <div class="hero__text is-active" data-slide="0">
+        <h1>Mobilim<br />për stilin tuaj të jetesës</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+
+      <div class="hero__text" data-slide="1">
+        <h1>Komoditet modern<br />pa kohë</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+
+      <div class="hero__text" data-slide="2">
+        <h1>Detaje të punuara<br />për çdo hapësirë</h1>
+        <a class="cta-btn" href="#products"><span>PRODUKTET</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+     FEATURED COLLECTIONS
+========================== -->
+  <div class="brands-wrap">
+    <section id="brands" class="brands">
+      <div class="brands__inner">
+        <header class="brands__header">
+          <div class="brands__heading">
+            <h2 class="brands__title">Koleksionet tona</h2>
+            <span class="brands__eyebrow">Brendet</span>
+          </div>
+
+          <div class="brands__logo">
+            <img src="./images/logo.png" alt="Roni Mobileri logo" />
+          </div>
+        </header>
+
+        <div class="brands__grid">
+          <article class="brandcard">
+            <img class="brandcard__img"
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80"
+              alt="Visionnaire" />
+            <div class="brandcard__overlay"></div>
+            <div class="brandcard__content">
+              <h3 class="brandcard__name">Visionnaire</h3>
+              <p class="brandcard__desc">
+                Mobilje luksoze italiane të njohura për dizajn të guximshëm,
+                materiale të rafinuara dhe mjeshtëri të jashtëzakonshme.
+              </p>
+            </div>
+          </article>
+
+          <article class="brandcard">
+            <img class="brandcard__img"
+              src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80"
+              alt="Giusti Portos" />
+            <div class="brandcard__overlay"></div>
+            <div class="brandcard__content">
+              <h3 class="brandcard__name">Giusti Portos</h3>
+              <p class="brandcard__desc">
+                Mobilje të sofistikuara të karakterizuara nga forma elegante
+                dhe përfundime artizanale.
+              </p>
+            </div>
+          </article>
+
+          <article class="brandcard">
+            <img class="brandcard__img"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80"
+              alt="Francesco Pasi" />
+            <div class="brandcard__overlay"></div>
+            <div class="brandcard__content">
+              <h3 class="brandcard__name">Francesco Pasi</h3>
+              <p class="brandcard__desc">
+                Mobilje të punuara me dorë që ndërthurin traditën me elegancën moderne
+                dhe materiale cilësore.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========================
+     COMPONENT: KATEGORITË
+========================== -->
+<section class="categories">
+  <div class="categories__inner">
+
+    <!-- Header -->
+    <header class="categories__header">
+      <h2 class="categories__title">MOBILJE</h2>
+      <p class="categories__subtitle">PËR ÇDO HAPËSIRË</p>
+    </header>
+
+    <!-- Grid -->
+    <div class="categories__grid">
+
+      <!-- ROW 1 (4 items) -->
+      <a class="category" href="#">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" alt="">
+        <span>SALLONI</span>
+      </a>
+
+      <a class="category" href="#">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80" alt="">
+        <span>DHOMA E GJUMIT</span>
+      </a>
+
+      <a class="category" href="#">
+        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1600&q=80" alt="">
+        <span>NGRËNIE</span>
+      </a>
+
+      <a class="category" href="#">
+        <img src="https://www.ddcnyc.com/wp-content/uploads/2025/09/ddc_DS_1.jpg" alt="">
+        <span>AKSESORË</span>
+      </a>
+
+      <!-- ROW 2 (3 items) -->
+      <a class="category category--wide" href="#">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80" alt="">
+        <span>ZYRË SHTËPIE</span>
+      </a>
+
+      <a class="category category--wide" href="#">
+        <img src="https://modernwicker.com/cdn/shop/files/OUTSY0AKA-08-BR-RKatalinaConversationSet_main_1.webp?v=1748955777&width=2700" alt="">
+        <span>JASHTË</span>
+      </a>
+
+      <a class="category category--wide" href="#">
+        <img src="https://furnitureoutletstores.co.uk/wp-content/uploads/2023/11/Furniture-Outlet-Homepage-Snippet-Image.jpg" alt="">
+        <span>OUTLET</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+ 
+  <!-- =========================
+     EDITORIAL SPLIT
+========================== -->
+  <section class="editorial">
+    <div class="editorial__block">
+      <div class="editorial__image"
+        style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80');">
+      </div>
+
+      <div class="editorial__content">
+        <div class="editorial__inner">
+          <h3>I dizajnuar për jetesë</h3>
+          <p>
+            Koleksionet tona formësohen nga një filozofi komoditeti,
+            proporcioni dhe dizajni të përjetshëm. Çdo element është krijuar
+            për t’u ndjerë natyrshëm në hapësirën tuaj.
+          </p>
+          <p>
+            Nga materialet e përzgjedhura me kujdes deri te mjeshtëria e detajuar,
+            çdo detaj synon të përmirësojë mënyrën tuaj të jetesës.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="editorial__block editorial__block--reverse">
+      <div class="editorial__image"
+        style="background-image:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80');">
+      </div>
+
+      <div class="editorial__content">
+        <div class="editorial__inner">
+          <h3>I punuar me qëllim</h3>
+          <p>
+            Bashkëpunojmë me prodhues që vlerësojnë traditën, precizionin
+            dhe inovacionin, duke krijuar mobilje me karakter dhe thellësi.
+          </p>
+          <p>
+            Çdo koleksion pasqyron një balancë mes teknikave tradicionale
+            dhe dizajnit bashkëkohor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="editorial__block">
+      <div class="editorial__image"
+        style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80');">
+      </div>
+
+      <div class="editorial__content">
+        <div class="editorial__inner">
+          <h3>Hapësira që ndihen personale</h3>
+          <p>
+            Mobiljet duhet të përshtaten me mënyrën tuaj të jetesës,
+            jo e kundërta. Qasja jonë fokusohet në krijimin e ambientesh
+            të qeta dhe mikpritëse.
+          </p>
+          <p>
+            Organizimi i menduar, teksturat e buta dhe tonet e ngrohta
+            krijojnë hapësira ku komoditeti dhe eleganca bashkëjetojnë.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+     GIANT PREMIUM FOOTER
+========================== -->
+  <footer class="footer">
+    
+    <div class="footer__inner">
+      <div class="footer__top">
+        
+     
+
+        <div class="footer__col">
+          <h4>Salloni</h4>
+          <address>
+            Rruga Gustav Meyer<br />
+            Nr. 24<br />
+            10000 Prishtinë<br />
+            Kosovë
+          </address>
+          <p class="footer__note">
+            Vizitoni sallonin tonë për të përjetuar koleksionet nga afër.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <p>Shitje<br /><a href="tel:+38344123456">+383 44 123 456</a></p>
+          <p>Mbështetje<br /><a href="tel:+38349111222">+383 49 111 222</a></p>
+          <p>Email<br /><a href="mailto:info@ronimobileri.com">info@ronimobileri.com</a></p>
+        </div>
+
+     
+        <div class="footer__col">
+          <h4>Orari i punës</h4>
+          <p>E hënë – E premte<br />09:00 – 18:00</p>
+          <p>E shtunë<br />10:00 – 16:00</p>
+          <p class="footer__note">E diel – mbyllur</p>
+        </div>
+        <img src="./images/logo.png" alt="Roni Mobileri logo" class="logo logo--footer" />
+
+      </div>
+
+
+      
+      <div class="footer__bottom">
+        <p>© 2026 Roni Mobileri. Të gjitha të drejtat e rezervuara.</p>
+        <p class="footer__legal">Dizajnuar me kujdes për jetesë moderne.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".navbar__toggle");
+    const panel = document.querySelector(".mobilepanel");
+
+    const setMenu = (open) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      panel.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+    };
+
+    setMenu(false);
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setMenu(!isOpen);
+    });
+
+    panel.addEventListener("click", (e) => {
+      if (e.target.closest("a")) setMenu(false);
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setMenu(false);
+    });
+
+    const slides = Array.from(document.querySelectorAll(".hero__slide"));
+    const texts = Array.from(document.querySelectorAll(".hero__text"));
+
+    let i = 0;
+    setInterval(() => {
+      slides[i].classList.remove("is-active");
+      texts[i].classList.remove("is-active");
+      i = (i + 1) % slides.length;
+      slides[i].classList.add("is-active");
+      texts[i].classList.add("is-active");
+    }, 5000);
+
+    const editorialBlocks = document.querySelectorAll(".editorial__block");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    editorialBlocks.forEach((block) => observer.observe(block));
+  </script>
+</body>
+</html>
