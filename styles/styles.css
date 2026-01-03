@@ -30,8 +30,7 @@ a {
 
 body {
   padding-top: var(--nav-height);
-}
-/* =========================
+}/* =========================
    COMPONENT: NAVBAR
 ========================= */
 .navbar {
@@ -103,7 +102,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px; /* tight under the text */
+  bottom: -8px;
   height: 1px;
   width: 100%;
   background: rgba(255, 255, 255, 0.92);
@@ -124,7 +123,7 @@ body {
   background: transparent;
   cursor: pointer;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 12px; /* keeps the click area comfortable, not visible unless hover */
 }
 
 .navbar__toggle:hover {
@@ -159,82 +158,107 @@ body {
   top: 7px;
 }
 
-/* Mobile panel (UPDATED: smooth open + centered + elegant) */
+/* =========================
+   MOBILE PANEL (PHOTO STYLE)
+   - white background
+   - centered links
+   - underline on active/hover
+   - smooth open animation
+========================= */
 .mobilepanel {
-  display: block; /* allow animation */
+  /* keep your structure */
   max-width: var(--container);
   margin: 0 auto;
-  padding: 10px var(--pad-x) 18px;
-  border-bottom: 1px solid var(--nav-line);
-  background: var(--nav-bg);
-  backdrop-filter: blur(10px);
 
-  /* animation */
+  /* photo style */
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  backdrop-filter: none;
+
+  /* spacing */
+  padding: 18px var(--pad-x) 26px;
+
+  /* smooth open/close animation (works with [hidden]) */
+  display: block;
+  overflow: hidden;
   max-height: 0;
   opacity: 0;
-  overflow: hidden;
-  transform: translateY(-8px);
-  transition: max-height 320ms ease, opacity 220ms ease, transform 220ms ease;
+  transform: translateY(-10px);
+  transition: max-height 380ms ease, opacity 240ms ease, transform 240ms ease;
 }
-/* when your JS removes [hidden] */
+
 .mobilepanel:not([hidden]) {
-  max-height: 260px; /* adjust if needed */
+  max-height: 520px; /* enough for many links */
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Mobile links list */
 .mobilepanel__links {
   list-style: none;
-  padding: 14px 0 18px;      /* UPDATED */
+  padding: 0;
   margin: 0;
+
   display: grid;
-  gap: 10px;
-  transition: opacity 220ms ease;
-  justify-items: center;
+  gap: 18px;
+
+  justify-items: center; /* centered like the screenshot */
   text-align: center;
 }
 
-.mobilepanel:not([hidden]) .mobilepanel__links {
-  opacity: 1;
-}
-
+/* Links (NO circles, NO pills) */
 .mobilepanel__links a {
-  /* UPDATED: centered pill width + elegant */
-  width: min(520px, 92%);
-  text-align: center;
+  display: inline-block;
+  padding: 6px 0;
 
-  display: block;
-  padding: 12px 14px;
-  border-radius: 999px;
+  color: #0b0b0c; /* black text */
+  text-decoration: none;
 
-  color: var(--nav-text);
-
-  font-weight: 500;          /* UPDATED: not bold */
-  font-size: 13px;
-  letter-spacing: 0.10em;    /* UPDATED */
+  font-weight: 500; /* elegant, not bold */
+  font-size: 14px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-
-  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+  position: relative;
+  opacity: 0.92;
+  transition: opacity 180ms ease;
 }
 
 .mobilepanel__links a:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.16);
-  transform: translateY(-1px);
+  opacity: 1;
+}
+
+/* Underline like the screenshot */
+.mobilepanel__links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  height: 2px;
+  width: 56px;
+  background: #0b0b0c;
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 220ms ease;
+}
+
+.mobilepanel__links a:hover::after,
+.mobilepanel__links a[aria-current="page"]::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .mobilepanel,
-  .mobilepanel__links a {
+  .mobilepanel__links a::after {
     transition: none !important;
   }
 }
 
-/* Responsive navbar */
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
 @media (max-width: 900px) {
   .navbar__links {
     display: none;
@@ -250,6 +274,7 @@ body {
     overflow: hidden;
   }
 }
+
 
 /* =========================
    COMPONENT: HERO
